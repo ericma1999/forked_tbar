@@ -1,5 +1,7 @@
 package edu.lu.uni.serval.tbar.utils;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
@@ -9,25 +11,53 @@ public class TestUtils {
 
 	public static int getFailTestNumInProject(String projectName, String defects4jPath, List<String> failedTests){
         String testResult = getDefects4jResult(projectName, defects4jPath, "test");
+        System.out.println("this is the test result");
+        System.out.println(testResult);
+
+        Pattern pattern = Pattern.compile(".*Tests run: (\\d+), Failures: (\\d+), Errors: (\\d+).*");
+
+
+        Matcher m = pattern.matcher(testResult);
+
+        if (m.find()) {
+            if (Integer.parseInt(m.group(2)) != 0) {
+                return Integer.parseInt(m.group(2));
+            }
+        
+        
+            if (Integer.parseInt(m.group(3)) != 0) {
+                return Integer.parseInt(m.group(3));
+            }
+        }
+
+        System.out.println("WTF");
+
         if (testResult.equals("")){//error occurs in run
             return Integer.MAX_VALUE;
         }
         if (!testResult.contains("Failing tests:")){
             return Integer.MAX_VALUE;
         }
-        int errorNum = 0;
-        String[] lines = testResult.trim().split("\n");
-        for (String lineString: lines){
-            if (lineString.startsWith("Failing tests:")){
-                errorNum =  Integer.valueOf(lineString.split(":")[1].trim());
-                if (errorNum == 0) break;
-            } else if (lineString.startsWith("Running ")) {
-            	break;
-            } else {
-            	failedTests.add(lineString.trim());
-            }
-        }
-        return errorNum;
+
+        return Integer.MAX_VALUE;
+
+
+
+
+
+        // int errorNum = 0;
+        // String[] lines = testResult.trim().split("\n");
+        // for (String lineString: lines){
+        //     if (lineString.startsWith("Failing tests:")){
+        //         errorNum =  Integer.valueOf(lineString.split(":")[1].trim());
+        //         if (errorNum == 0) break;
+        //     } else if (lineString.startsWith("Running ")) {
+        //     	break;
+        //     } else {
+        //     	failedTests.add(lineString.trim());
+        //     }
+        // }
+        // return errorNum;
 	}
 	
 //	public static int getFailTestNumInProject(String buggyProject, List<String> failedTests, String classPath,
@@ -82,7 +112,14 @@ public class TestUtils {
 			String buggyProject = projectName.substring(projectName.lastIndexOf("/") + 1);
 			//which java\njava -version\n
             System.out.println(cmdType);
-            String result = ShellUtils.shellRun(Arrays.asList("cd " + projectName + "\n", "defects4j " + cmdType + "\n"), buggyProject, cmdType.equals("test") ? 2 : 1);//"defects4j " + cmdType + "\n"));//
+            String testCommand = "";
+            if (cmdType == "compile") {
+                testCommand = "mvn -DskipTests clean install";
+            } else if (cmdType == "test") {
+                testCommand = "mvn test -Dtest=hudson.tasks.junit.JUnitResultArchiverTest#testXxe";
+            }
+
+            String result = ShellUtils.shellRun(Arrays.asList("cd " + projectName + "\n", testCommand + "\n"), buggyProject, cmdType.equals("test") ? 2 : 1);//"defects4j " + cmdType + "\n"));//
             return result.trim();
         } catch (IOException e){
         	e.printStackTrace();

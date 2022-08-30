@@ -81,7 +81,14 @@ public class PathUtils {
 				path.add("/src/");
 				path.add("/test/");
 			}
+		} else {
+				path.add("/target/classes/");
+				path.add("/target/test-classes/");
+				path.add("/src/main/");
+				path.add("/src/test/");
+			System.out.println("BRUH123");
 		}
+		
 		return path;
 	}
 
