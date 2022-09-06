@@ -117,7 +117,7 @@ class ReadShellProcess implements Callable<String> {
             String s;
             in = new BufferedInputStream(process.getInputStream());
             br = new BufferedReader(new InputStreamReader(in));
-            while ((s = br.readLine()) != null && s.length()!=0) {
+            while ((s = br.readLine()) != null) {
                 if (sb.length() < 1000000){
                     if (Thread.interrupted()){
                         return sb.toString();
