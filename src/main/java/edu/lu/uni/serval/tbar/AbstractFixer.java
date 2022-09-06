@@ -196,11 +196,18 @@ public abstract class AbstractFixer implements IFixer {
 			suspiciousClassName = suspiciousClassName.substring(0, suspiciousClassName.indexOf("$"));
 		}
 		String suspiciousJavaFile = suspiciousClassName.replace(".", "/") + ".java";
-		
+		System.out.println("this is the file");
+		System.out.println(suspiciousJavaFile);
 		suspiciousClassName = suspiciousJavaFile.substring(0, suspiciousJavaFile.length() - 5).replace("/", ".");
 		
 		String filePath = dp.srcPath + suspiciousJavaFile;
+		System.out.println("this is the file path");
+		System.out.println(filePath);
+		System.out.println(new File(filePath).exists());
+		File x = new File("./IFixer.java");
+		System.out.println(new File(System.getProperty("user.dir")).getAbsolutePath());
 		if (!new File(filePath).exists()) return null;
+		System.out.println("after openning");
 		File suspCodeFile = new File(filePath);
 		if (!suspCodeFile.exists()) return null;
 		SuspiciousCodeParser scp = new SuspiciousCodeParser();

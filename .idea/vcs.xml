@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/D4J/defects4j" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/D4J/projects/Closure_1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/D4J/projects/Closure_2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/D4J/projects/Closure_3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/D4J/projects/Time_1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/D4J/projects/Time_2" vcs="Git" />
+  </component>
+</project>

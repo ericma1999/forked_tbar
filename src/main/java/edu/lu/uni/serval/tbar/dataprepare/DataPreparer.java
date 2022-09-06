@@ -58,7 +58,7 @@ public class DataPreparer {
 		List<String> paths = PathUtils.getSrcPath(buggyProject);
 		classPath = projectDir + buggyProject + paths.get(0);
 		testClassPath = projectDir + buggyProject + paths.get(1);
-		srcPath = projectDir + buggyProject + paths.get(2);
+		srcPath = projectDir + buggyProject + paths.get(2) + "java/"; // have to add this because of the path
 		testSrcPath = projectDir + buggyProject + paths.get(3);
 
 		List<File> libPackages = new ArrayList<>();

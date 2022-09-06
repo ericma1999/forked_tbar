@@ -18,28 +18,28 @@ public class TestUtils {
 
 
         Matcher m = pattern.matcher(testResult);
-
-        if (m.find()) {
-            if (Integer.parseInt(m.group(2)) != 0) {
-                return Integer.parseInt(m.group(2));
-            }
+        return 1;
+        // if (m.find()) {
+        //     if (Integer.parseInt(m.group(2)) != 0) {
+        //         return Integer.parseInt(m.group(2));
+        //     }
         
         
-            if (Integer.parseInt(m.group(3)) != 0) {
-                return Integer.parseInt(m.group(3));
-            }
-        }
+        //     if (Integer.parseInt(m.group(3)) != 0) {
+        //         return Integer.parseInt(m.group(3));
+        //     }
+        // }
 
-        System.out.println("WTF");
+        // System.out.println("WTF");
 
-        if (testResult.equals("")){//error occurs in run
-            return Integer.MAX_VALUE;
-        }
-        if (!testResult.contains("Failing tests:")){
-            return Integer.MAX_VALUE;
-        }
+        // if (testResult.equals("")){//error occurs in run
+        //     return Integer.MAX_VALUE;
+        // }
+        // if (!testResult.contains("Failing tests:")){
+        //     return Integer.MAX_VALUE;
+        // }
 
-        return Integer.MAX_VALUE;
+        // return Integer.MAX_VALUE;
 
 
 
@@ -116,7 +116,7 @@ public class TestUtils {
             if (cmdType == "compile") {
                 testCommand = "mvn -DskipTests clean install";
             } else if (cmdType == "test") {
-                testCommand = "mvn test -Dtest=hudson.tasks.junit.JUnitResultArchiverTest#testXxe";
+                testCommand = "mvn test -Dtest=org.apache.commons.compress.archivers.zip.ZipArchiveInputStreamTest";
             }
 
             String result = ShellUtils.shellRun(Arrays.asList("cd " + projectName + "\n", testCommand + "\n"), buggyProject, cmdType.equals("test") ? 2 : 1);//"defects4j " + cmdType + "\n"));//
