@@ -5,6 +5,10 @@ import java.util.regex.Pattern;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
+import java.io.File;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.*;
 
 public class TestUtils {
 
@@ -107,12 +111,42 @@ public class TestUtils {
 		return 0;
 	}
 
+    private static JsonNode readJson(String bugProject) throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        String[] elements = bugProject.split("-");
+        String x = elements[0] + "-" +elements[1];
+        JsonNode jsonNode = mapper.readTree(new File(System.getProperty("user.dir") + "/data/" + x + ".json"));
+        return jsonNode;
+    }
+
 	private static String getDefects4jResult(String projectName, String defects4jPath, String cmdType) {
 		try {
 			String buggyProject = projectName.substring(projectName.lastIndexOf("/") + 1);
 			//which java\njava -version\n
             System.out.println(cmdType);
+            System.out.println(projectName);
             String testCommand = "";
+            String[] projectPath = projectName.split("/");
+            JsonNode content = readJson(projectPath[projectPath.length - 1]);
+            System.out.println("ahoy my friend");
+            System.out.println(content.get("build_system").get("custom"));
+            JsonNode custom = content.get("build_system").get("custom");
+
+            if (custom.isArray()) {
+                for (JsonNode config: custom) {
+                    System.out.println(config);
+                    if (config.get("test") != null) {
+                        System.out.println("The test command");
+                        System.out.println(config.get("test"));
+                    }
+
+                    if (config.get("compile") != null) {
+                        System.out.println("The compile command");
+                        System.out.println(config.get("compile"));
+                    }
+                }
+            }
+
             if (cmdType == "compile") {
                 testCommand = "mvn -DskipTests clean install";
             } else if (cmdType == "test") {

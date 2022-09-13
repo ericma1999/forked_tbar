@@ -23,16 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e362452-65ca-4366-bccb-35bb736687b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/FailedTestCases/VUL4J-56.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/D4J/projects/VUL4J_56" beforeDir="false" afterPath="$PROJECT_DIR$/D4J/projects/VUL4J_56" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuspiciousCodePositions/VUL4J-56/Ochiai.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SuspiciousCodePositions/VUL4J-56/Ochiai.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/AbstractFixer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/AbstractFixer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/utils/PathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/utils/PathUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/lu/uni/serval/tbar/AbstractFixer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/lu/uni/serval/tbar/AbstractFixer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/lu/uni/serval/tbar/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/lu/uni/serval/tbar/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/lu/uni/serval/tbar/utils/PathUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/lu/uni/serval/tbar/utils/PathUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/utils/TestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/utils/TestUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/lu/uni/serval/tbar/utils/TestUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/lu/uni/serval/tbar/utils/TestUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/dependency/TBar-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/dependency/TBar-0.0.1-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,15 +74,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Maven.TBar [package,-DskipTests...]">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,7 +157,8 @@
       <workItem from="1663051672408" duration="1655000" />
       <workItem from="1663065828221" duration="689000" />
       <workItem from="1663066531676" duration="1224000" />
-      <workItem from="1663099479862" duration="311000" />
+      <workItem from="1663099479862" duration="1242000" />
+      <workItem from="1663100736035" duration="616000" />
     </task>
     <servers />
   </component>
@@ -213,10 +206,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="569" y="398" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.960@0.0.1536.960" timestamp="1662424084640" />
-    <state x="469" y="235" width="800" height="490" key="find.popup" timestamp="1663099619786">
+    <state x="469" y="235" width="800" height="490" key="find.popup" timestamp="1663100223861">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="469" y="235" width="800" height="490" key="find.popup/0.0.1536.960@0.0.1536.960" timestamp="1663099619786" />
+    <state x="469" y="235" width="800" height="490" key="find.popup/0.0.1536.960@0.0.1536.960" timestamp="1663100223861" />
     <state x="367" y="99" key="new project wizard" timestamp="1663096357273">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
@@ -225,9 +218,9 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="433" y="225" key="run.anything.popup/0.0.1536.960@0.0.1536.960" timestamp="1663096345705" />
-    <state x="433" y="212" width="670" height="675" key="search.everywhere.popup" timestamp="1663089684015">
+    <state x="433" y="212" width="670" height="675" key="search.everywhere.popup" timestamp="1663100489285">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="433" y="212" width="670" height="675" key="search.everywhere.popup/0.0.1536.960@0.0.1536.960" timestamp="1663089684015" />
+    <state x="433" y="212" width="670" height="675" key="search.everywhere.popup/0.0.1536.960@0.0.1536.960" timestamp="1663100489285" />
   </component>
 </project>
