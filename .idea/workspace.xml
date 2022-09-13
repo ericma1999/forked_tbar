@@ -26,8 +26,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/D4J/projects/VUL4J_56" beforeDir="false" afterPath="$PROJECT_DIR$/D4J/projects/VUL4J_56" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/utils/TestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/utils/TestUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/lu/uni/serval/tbar/utils/TestUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/lu/uni/serval/tbar/utils/TestUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dependency/TBar-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/dependency/TBar-0.0.1-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +156,7 @@
       <workItem from="1663065828221" duration="689000" />
       <workItem from="1663066531676" duration="1224000" />
       <workItem from="1663099479862" duration="1242000" />
-      <workItem from="1663100736035" duration="616000" />
+      <workItem from="1663100736035" duration="922000" />
     </task>
     <servers />
   </component>

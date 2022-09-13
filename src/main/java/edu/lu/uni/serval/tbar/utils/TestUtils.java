@@ -135,23 +135,32 @@ public class TestUtils {
             if (custom.isArray()) {
                 for (JsonNode config: custom) {
                     System.out.println(config);
-                    if (config.get("test") != null) {
+                    if (cmdType == "test" && config.get("test") != null) {
                         System.out.println("The test command");
-                        System.out.println(config.get("test"));
-                    }
+                        String x = config.get("test").textValue();
+                        String[] potentialCommand = x.split("#");
+                        String command;
+                        if (potentialCommand.length != 2) {
+                            command = x;
+                        }else {
+                            command = potentialCommand[0];
+                        }
+                        testCommand = command;
 
-                    if (config.get("compile") != null) {
+                    }
+                    else if (cmdType == "compile" && config.get("compile") != null) {
                         System.out.println("The compile command");
                         System.out.println(config.get("compile"));
+                        testCommand = config.get("compile").textValue();
                     }
                 }
             }
 
-            if (cmdType == "compile") {
-                testCommand = "mvn -DskipTests clean install";
-            } else if (cmdType == "test") {
-                testCommand = "mvn test -Dtest=org.apache.commons.compress.archivers.zip.ZipArchiveInputStreamTest";
-            }
+//            if (cmdType == "compile") {
+//                testCommand = "mvn -DskipTests clean install";
+//            } else if (cmdType == "test") {
+//                testCommand = "mvn test -Dtest=org.apache.commons.compress.archivers.zip.ZipArchiveInputStreamTest";
+//            }
 
             String result = ShellUtils.shellRun(Arrays.asList("cd " + projectName + "\n", testCommand + "\n"), buggyProject, cmdType.equals("test") ? 2 : 1);//"defects4j " + cmdType + "\n"));//
             return result.trim();
