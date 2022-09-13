@@ -23,12 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e362452-65ca-4366-bccb-35bb736687b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_20160212.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuspiciousCodePositions/VUL4J_56/Ochiai.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SuspiciousCodePositions/VUL4J_56/Ochiai.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/TBar/VUL4J_56/ZipArchiveInputStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/TBar/VUL4J_56/ZipArchiveInputStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/TBar/VUL4J_56/ZipArchiveInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/TBar/VUL4J_56/ZipArchiveInputStream.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/utils/PathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/utils/PathUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/lu/uni/serval/tbar/utils/PathUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dependency/TBar-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dependency/TBar-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/dependency/TBar-0.0.1-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +62,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
@@ -152,6 +160,8 @@
       <workItem from="1663031515909" duration="968000" />
       <workItem from="1663051144956" duration="368000" />
       <workItem from="1663051672408" duration="1655000" />
+      <workItem from="1663065828221" duration="689000" />
+      <workItem from="1663066531676" duration="1224000" />
     </task>
     <servers />
   </component>
@@ -168,6 +178,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="465" y="62" width="1071" height="898" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1663053277208">
@@ -190,10 +201,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state width="1494" height="265" key="GridCell.Tab.0.right/0.0.1536.960@0.0.1536.960" timestamp="1663053255694" />
-    <state x="277" y="116" key="SettingsEditor" timestamp="1663052151009">
+    <state x="277" y="116" key="SettingsEditor" timestamp="1663066207952">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="277" y="116" key="SettingsEditor/0.0.1536.960@0.0.1536.960" timestamp="1663052151009" />
+    <state x="277" y="116" key="SettingsEditor/0.0.1536.960@0.0.1536.960" timestamp="1663066207952" />
     <state x="569" y="398" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1662424084640">
       <screen x="0" y="0" width="1536" height="960" />
     </state>

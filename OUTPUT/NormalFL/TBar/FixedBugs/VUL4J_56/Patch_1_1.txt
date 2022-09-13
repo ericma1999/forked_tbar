@@ -1,0 +1,18 @@
+diff --git a/D4J/projects/Closure_1 b/D4J/projects/Closure_1
+--- a/D4J/projects/Closure_1
++++ b/D4J/projects/Closure_1
+@@ -1 +1 @@
+-Subproject commit c4f8ff69cf7e97936feb84a55bbb5e361c29f300
++Subproject commit c4f8ff69cf7e97936feb84a55bbb5e361c29f300-dirty
+diff --git a/D4J/projects/Closure_2 b/D4J/projects/Closure_2
+--- a/D4J/projects/Closure_2
++++ b/D4J/projects/Closure_2
+@@ -1 +1 @@
+-Subproject commit 3428495c5490d871d3a79d319770e4467aeb905d
++Subproject commit 3428495c5490d871d3a79d319770e4467aeb905d-dirty
+diff --git a/D4J/projects/Closure_3 b/D4J/projects/Closure_3
+--- a/D4J/projects/Closure_3
++++ b/D4J/projects/Closure_3
+@@ -1 +1 @@
+-Subproject commit 2f88d63d3e07762a712339a282d85b94aed91dad
++Subproject commit 2f88d63d3e07762a712339a282d85b94aed91dad-dirty

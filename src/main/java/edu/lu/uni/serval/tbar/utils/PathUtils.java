@@ -1,11 +1,17 @@
 package edu.lu.uni.serval.tbar.utils;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import org.json.simple.*;
-import org.json.simple.parser.*;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.StringUtils;
+//import com.fasterxml.jackson.core.*;
+import com.fasterxml.jackson.*;
 
 public class PathUtils {
 
@@ -84,8 +90,22 @@ public class PathUtils {
 				path.add("/test/");
 			}
 		} else {
-			System.out.println("What the hell man??");
+				JsonNode content;
+				try {
+					content = readJson(bugProject);
+				} catch (IOException e) {
+					e.printStackTrace();
+					return path;
+				}
 				System.out.println(bugProject);
+			System.out.println("YOYOY");
+			System.out.println(content.get("method_line_before"));
+
+//				path.add("/" + content.get("src_classes").asText() + "/");
+//				path.add("/" + content.get("test_classes").asText() + "/");
+//				path.add("/" + content.get("file_path").asText() + "/");
+//				path.add("/" + content.get("test_class").asText() + "/");
+
 				path.add("/target/classes/");
 				path.add("/target/test-classes/");
 				path.add("/src/main/");
@@ -94,6 +114,14 @@ public class PathUtils {
 		}
 		
 		return path;
+	}
+
+	public static JsonNode readJson(String bugProject) throws IOException {
+		ObjectMapper mapper = new ObjectMapper();
+		String[] elements = bugProject.split("_");
+		String x = elements[0] + "-" +elements[1];
+		JsonNode jsonNode = mapper.readTree(new File(System.getProperty("user.dir") + "/data/" + x + ".json"));
+		return jsonNode;
 	}
 
 	public static String getJunitPath() {
