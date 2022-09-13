@@ -1,0 +1,30 @@
+{
+  "id": "VUL4J-71",
+  "name": "spring-projects/spring-framework",
+  "vcs": "git",
+  "repo": "https://github.com/spring-projects/spring-framework.git",
+  "method": "-",
+  "method_line": "50",
+  "method_line_before": "49",
+  "revision": "e02ff3a0da50744b0980d5d665fd242eedea767",
+  "build_system": {
+    "custom": [
+      {
+        "test": "./gradlew :spring-core:test --tests org.springframework.util.MimeTypeTests"
+      },
+      {
+        "compile": "./gradlew :spring-core:compileTestJava"
+      },
+      {
+        "extract": "mvn dependency:build-classpath -Dmdep.outputFile='classpath.info' -U -V -B"
+      }
+    ]
+  },
+  "file_path": "spring-core/src/main/java/org/springframework/util/MimeTypeUtils.java",
+  "test_class": "org.springframework.util.MimeTypeTests",
+  "src_path": "spring-core/src/main/java",
+  "test_path": "spring-core/src/test/java",
+  "package_path": ".",
+  "src_classes": "spring-core/build/classes/main",
+  "test_classes": "spring-core/build/classes/test"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "VUL4J-77",
+  "name": "swagger-api/swagger-parser",
+  "vcs": "git",
+  "repo": "https://github.com/swagger-api/swagger-parser.git",
+  "method": "readYamlTree, readYamlValue",
+  "method_line": "60, 65",
+  "method_line_before": "59, 64",
+  "revision": "4c6584306b40de9b2dfa9065c3a438cd918534af",
+  "build_system": {
+    "custom": [
+      {
+        "test": "mvn -pl modules/swagger-parser -Dtest=\"io.swagger.parser.util.*\""
+      },
+      {
+        "compile": "mvn -DskipTests clean install"
+      },
+      {
+        "extract": "mvn dependency:build-classpath -Dmdep.outputFile='classpath.info' -U -V -B"
+      }
+    ]
+  },
+  "file_path": "modules/swagger-parser/src/main/java/io/swagger/parser/util/DeserializationUtils.java",
+  "test_class": "io.swagger.parser.util.SwaggerDeserializerTest",
+  "src_path": "modules/swagger-parser/src/main/java",
+  "test_path": "modules/swagger-parser/src/test/java",
+  "package_path": ".",
+  "src_classes": "modules/swagger-parser/target/classes",
+  "test_classes": "modules/swagger-parser/target/test-classes",
+  "custom_classpath_project": "modules/swagger-parser"
+}

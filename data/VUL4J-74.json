@@ -1,0 +1,30 @@
+{
+  "id": "VUL4J-74",
+  "name": "spring-projects/spring-security",
+  "vcs": "git",
+  "repo": "https://github.com/spring-projects/spring-security.git",
+  "method": "getObject",
+  "method_line": "37",
+  "method_line_before": "37",
+  "revision": "1304c958bf9c38940082f3ad1558d413ed82f2b",
+  "build_system": {
+    "custom": [
+      {
+        "test": "./gradlew :spring-security-core:test --tests org.springframework.security.core.token.SecureRandomFactoryBeanTests.testCreatesUsingSeed"
+      },
+      {
+        "compile": "./gradlew :spring-security-core:compileTestJava"
+      },
+      {
+        "extract": "mvn dependency:build-classpath -Dmdep.outputFile='classpath.info' -U -V -B"
+      }
+    ]
+  },
+  "file_path": "core/src/main/java/org/springframework/security/core/token/SecureRandomFactoryBean.java",
+  "test_class": "org.springframework.security.core.token.SecureRandomFactoryBeanTests",
+  "src_path": "core/src/main/java",
+  "test_path": "core/src/test/java",
+  "package_path": ".",
+  "src_classes": "build/classes/java/main",
+  "test_classes": "build/classes/java/test"
+}

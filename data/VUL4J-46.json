@@ -1,0 +1,30 @@
+{
+  "id": "VUL4J-46",
+  "name": "FasterXML/jackson-dataformat-xml",
+  "vcs": "git",
+  "repo": "https://github.com/FasterXML/jackson-dataformat-xml.git",
+  "method": "XmlFactory",
+  "method_line": "104",
+  "method_line_before": "104",
+  "revision": "f0f19a4c924d9db9a1e2830434061c8640092cc0",
+  "build_system": {
+    "custom": [
+      {
+        "test": "mvn test -Dtest=com.fasterxml.jackson.dataformat.xml.TestCVE_2016_3720"
+      },
+      {
+        "compile": "mvn -DskipTests clean install"
+      },
+      {
+        "extract": "mvn dependency:build-classpath -Dmdep.outputFile='classpath.info' -U -V -B"
+      }
+    ]
+  },
+  "file_path": "src/main/java/com/fasterxml/jackson/dataformat/xml/XmlFactory.java",
+  "test_class": "com.fasterxml.jackson.dataformat.xml.TestCVE_2016_3720",
+  "src_path": "src/main/java",
+  "test_path": "src/test/java",
+  "package_path": ".",
+  "src_classes": "target/classes",
+  "test_classes": "target/test-classes"
+}

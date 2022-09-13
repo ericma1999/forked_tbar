@@ -1,0 +1,30 @@
+{
+  "id": "VUL4J-2",
+  "name": "apache/batik",
+  "vcs": "git",
+  "repo": "https://github.com/apache/xmlgraphics-batik.git",
+  "method": "createDocument",
+  "method_line": "354",
+  "method_line_before": "354",
+  "revision": "660ef628d637af636ea113243fe73f170ac43958",
+  "build_system": {
+    "custom": [
+      {
+        "test": "mvn test -pl batik-dom -Dtest=org.apache.batik.dom.util.TestCVE_2017_5662"
+      },
+      {
+        "compile": "mvn -DskipTests clean install"
+      },
+      {
+        "extract": "mvn dependency:build-classpath -Dmdep.outputFile='classpath.info' -U -V -B"
+      }
+    ]
+  },
+  "file_path": "batik-dom/src/main/java/org/apache/batik/dom/util/SAXDocumentFactory.java",
+  "test_class": "org.apache.batik.dom.util.TestCVE_2017_5662",
+  "src_path": "batik-dom/src/main/java/",
+  "test_path": "src/test/java",
+  "package_path": ".",
+  "src_classes": "target/classes",
+  "test_classes": "target/test-classes"
+}

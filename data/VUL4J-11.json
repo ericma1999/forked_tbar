@@ -1,0 +1,30 @@
+{
+  "id": "VUL4J-11",
+  "name": "apache/commons-fileupload",
+  "vcs": "git",
+  "repo": "https://github.com/apache/commons-fileupload.git",
+  "method": "MultipartStream",
+  "method_line": "318",
+  "method_line_before": "323",
+  "revision": "c61ff05b3241cb14d989b67209e57aa71540417a",
+  "build_system": {
+    "custom": [
+      {
+        "test": "mvn test -Dtest=org.apache.commons.fileupload.MultipartStreamTest#testSmallBuffer"
+      },
+      {
+        "compile": "mvn -DskipTests clean install"
+      },
+      {
+        "extract": "mvn dependency:build-classpath -Dmdep.outputFile='classpath.info' -U -V -B"
+      }
+    ]
+  },
+  "file_path": "src/main/java/org/apache/commons/fileupload/FileUploadBase.java",
+  "test_class": "org.apache.commons.fileupload.MultipartStreamTest",
+  "src_path": "src/main/java",
+  "test_path": "src/test/java",
+  "package_path": ".",
+  "src_classes": "target/classes",
+  "test_classes": "target/test-classes"
+}

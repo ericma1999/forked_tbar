@@ -1,0 +1,30 @@
+{
+  "id": "VUL4J-8",
+  "name": "apache/commons-compress",
+  "vcs": "git",
+  "repo": "https://github.com/apache/commons-compress.git",
+  "method": "encode",
+  "method_line": "78",
+  "method_line_before": "78",
+  "revision": "4ad5d80a6272e007f64a6ac66829ca189a8093b9",
+  "build_system": {
+    "custom": [
+      {
+        "test": "mvn test -Dtest=org.apache.commons.compress.archivers.zip.NioZipEncodingTest#partialSurrogatePair"
+      },
+      {
+        "compile": "mvn -DskipTests clean install"
+      },
+      {
+        "extract": "mvn dependency:build-classpath -Dmdep.outputFile='classpath.info' -U -V -B"
+      }
+    ]
+  },
+  "file_path": "src/main/java/org/apache/commons/compress/archivers/zip/NioZipEncoding.java",
+  "test_class": "org.apache.commons.compress.archivers.zip.NioZipEncodingTest",
+  "src_path": "src/main/java",
+  "test_path": "src/test/java",
+  "package_path": ".",
+  "src_classes": "target/classes",
+  "test_classes": "target/test-classes"
+}

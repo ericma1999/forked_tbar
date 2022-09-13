@@ -1,0 +1,30 @@
+{
+  "id": "VUL4J-51",
+  "name": "jenkinsci/ccm-plugin",
+  "vcs": "git",
+  "repo": "https://github.com/jenkinsci/ccm-plugin.git",
+  "method": "parseCCMXmlFile",
+  "method_line": "86",
+  "method_line_before": "86",
+  "revision": "066cb43b4413b3490d822ec8b8a32072ebd213ca",
+  "build_system": {
+    "custom": [
+      {
+        "test": "mvn test -Dtest=hudson.plugins.ccm.CcmPublisherTest"
+      },
+      {
+        "compile": "mvn -DskipTests clean install"
+      },
+      {
+        "extract": "mvn dependency:build-classpath -Dmdep.outputFile='classpath.info' -U -V -B"
+      }
+    ]
+  },
+  "file_path": "src/main/java/hudson/plugins/ccm/parser/CcmParser.java",
+  "test_class": "hudson.plugins.ccm.CcmPublisherTest",
+  "src_path": "src/main/java",
+  "test_path": "src/test/java",
+  "package_path": ".",
+  "src_classes": "target/classes",
+  "test_classes": "target/test-classes"
+}

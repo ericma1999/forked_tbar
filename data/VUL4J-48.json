@@ -1,0 +1,30 @@
+{
+  "id": "VUL4J-48",
+  "name": "inversoft/prime-jwt",
+  "vcs": "git",
+  "repo": "https://github.com/inversoft/prime-jwt.git",
+  "method": "decode",
+  "method_line": "153",
+  "method_line_before": "153",
+  "revision": "abb0d479389a2509f939452a6767dc424bb5e6ba",
+  "build_system": {
+    "custom": [
+      {
+        "test": "mvn test -Dtest=io.fusionauth.jwt.VulnerabilityTest#test_unsecuredJWT_validation"
+      },
+      {
+        "compile": "mvn -DskipTests clean install"
+      },
+      {
+        "extract": "mvn dependency:build-classpath -Dmdep.outputFile='classpath.info' -U -V -B"
+      }
+    ]
+  },
+  "file_path": "src/main/java/org/primeframework/jwt/JWTDecoder.java",
+  "test_class": "org.primeframework.jwt.VulnerabilityTest",
+  "src_path": "src/main/java",
+  "test_path": "src/test/java",
+  "package_path": ".",
+  "src_classes": "target/classes",
+  "test_classes": "target/test-classes"
+}

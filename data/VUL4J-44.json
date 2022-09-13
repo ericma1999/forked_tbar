@@ -1,0 +1,30 @@
+{
+  "id": "VUL4J-44",
+  "name": "ESAPI/esapi-java-legacy",
+  "vcs": "git",
+  "repo": "https://github.com/ESAPI/esapi-java-legacy.git",
+  "method": "encodeCharacter",
+  "method_line": "101",
+  "method_line_before": "96",
+  "revision": "b7cbc53f9cc967cf1a5a9463d8c6fef9ed6ef4f7",
+  "build_system": {
+    "custom": [
+      {
+        "test": "mvn test -Dtest=org.owasp.esapi.codecs.CodecImmunityTest"
+      },
+      {
+        "compile": "mvn -DskipTests clean install"
+      },
+      {
+        "extract": "mvn dependency:build-classpath -Dmdep.outputFile='classpath.info' -U -V -B"
+      }
+    ]
+  },
+  "file_path": "src/main/java/org/owasp/esapi/codecs/PercentCodec.java",
+  "test_class": "org.OWASP.esapi.codecs.CodecImmunityTest",
+  "src_path": "src/main/java",
+  "test_path": "src/test/java",
+  "package_path": ".",
+  "src_classes": "target/classes",
+  "test_classes": "target/test-classes"
+}

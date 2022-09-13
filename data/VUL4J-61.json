@@ -1,0 +1,30 @@
+{
+  "id": "VUL4J-61",
+  "name": "neo4j-contrib/neo4j-apoc-procedures",
+  "vcs": "git",
+  "repo": "https://github.com/ericma1999/VUL4J-61",
+  "method": "xmlXpathToMapResult",
+  "method_line": "60",
+  "method_line_before": "60",
+  "revision": "43ef9441b9063fa81ee552f745398dabdb55ef79",
+  "build_system": {
+    "custom": [
+      {
+        "test": "./gradlew test --tests apoc.load.XmlTest"
+      },
+      {
+        "compile": "./gradlew compileTestJava"
+      },
+      {
+        "extract": "./gradlew buildClasspath"
+      }
+    ]
+  },
+  "file_path": "src/main/java/apoc/load/Xml.java",
+  "test_class": "apoc.load.XmlTest",
+  "src_path": "src/main/java",
+  "test_path": "src/test/java",
+  "package_path": ".",
+  "src_classes": "build/classes/java/main",
+  "test_classes": "build/classes/java/test"
+}

@@ -2,6 +2,8 @@ package edu.lu.uni.serval.tbar.utils;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.json.simple.*;
+import org.json.simple.parser.*;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -82,6 +84,8 @@ public class PathUtils {
 				path.add("/test/");
 			}
 		} else {
+			System.out.println("What the hell man??");
+				System.out.println(bugProject);
 				path.add("/target/classes/");
 				path.add("/target/test-classes/");
 				path.add("/src/main/");

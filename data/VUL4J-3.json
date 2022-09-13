@@ -1,0 +1,31 @@
+{
+  "id": "VUL4J-3",
+  "name": "apache/camel",
+  "vcs": "git",
+  "repo": "https://github.com/apache/camel.git",
+  "method": "toSAXSourceFromStream",
+  "method_line": "575",
+  "method_line_before": "575",
+  "revision": "7d19340bcdb42f7aae584d9c5003ac4f7ddaee36",
+  "build_system": {
+    "custom": [
+      {
+        "test": "mvn test -pl camel-core -Dtest=org.apache.camel.component.xslt.XsltDTDTest"
+      },
+      {
+        "compile": "mvn -pl camel-core -DskipTests clean install"
+      },
+      {
+        "extract": "mvn -pl camel-core dependency:build-classpath -Dmdep.outputFile='classpath.info' -U -V -B"
+      }
+    ]
+  },
+  "file_path": "camel-core/src/main/java/org/apache/camel/converter/jaxp/XmlConverter.java",
+  "test_class": "org.apache.camel.component.xslt.XsltDTDTest",
+  "src_path": "camel-core/src/main/java",
+  "test_path": "camel-core/src/test/java",
+  "package_path": ".",
+  "src_classes": "camel-core/target/classes",
+  "test_classes": "camel-core/target/test-classes",
+  "custom_classpath_project": "camel-core"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "VUL4J-34",
+  "name": "apache/struts",
+  "vcs": "git",
+  "repo": "https://github.com/apache/struts.git",
+  "method": "getLocaleFromParam",
+  "method_line": "212",
+  "method_line_before": "11",
+  "revision": "fc2179cf1ac9fbfb61e3430fa88b641d87253327",
+  "build_system": {
+    "custom": [
+      {
+        "test": "mvn test -pl core -Dtest=com.opensymphony.xwork2.interceptor.I18nInterceptorTest"
+      },
+      {
+        "compile": "mvn -DskipTests -DskipAssembly clean install"
+      },
+      {
+        "extract": "mvn dependency:build-classpath -Dmdep.outputFile='classpath.info' -U -V -B"
+      }
+    ]
+  },
+  "file_path": "core/src/main/java/com/opensymphony/xwork2/interceptor/I18nInterceptor.java",
+  "test_class": "com.opensymphony.xwork2.interceptor.I18nInterceptorTest",
+  "src_path": "core/src/main/java",
+  "test_path": "core/src/test/java",
+  "package_path": ".",
+  "src_classes": "core/target/classes",
+  "test_classes": "core/target/test-classes",
+  "custom_classpath_project": "core"
+}

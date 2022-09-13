@@ -1,0 +1,30 @@
+{
+  "id": "VUL4J-64",
+  "name": "OpenRefine/OpenRefine",
+  "vcs": "git",
+  "repo": "https://github.com/OpenRefine/OpenRefine.git",
+  "method": "createXMLStreamReader",
+  "method_line": "320",
+  "method_line_before": "320",
+  "revision": "6a0d7d56e4ffb420316ce7849fde881344fbf881",
+  "build_system": {
+    "custom": [
+      {
+        "test": "mvn test -pl main -Dtest=com.google.refine.tests.importers.XmlImporterTests#ignoresDtds"
+      },
+      {
+        "compile": "./refine build"
+      },
+      {
+        "extract": "mvn dependency:build-classpath -Dmdep.outputFile='classpath.info' -U -V -B"
+      }
+    ]
+  },
+  "file_path": "main/src/com/google/refine/importers/XmlImporter.java",
+  "test_class": "com.google.refine.tests.importers.XmlImporterTests",
+  "src_path": "main/src",
+  "test_path": "main/tests",
+  "package_path": ".",
+  "src_classes": "webapp/WEB-INF/classes",
+  "test_classes": "target/test-classes"
+}

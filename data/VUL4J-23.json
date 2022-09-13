@@ -1,0 +1,30 @@
+{
+  "id": "VUL4J-23",
+  "name": "apache/sling",
+  "vcs": "git",
+  "repo": "https://github.com/apache/sling.git",
+  "method": "encodeForJSString",
+  "method_line": "431",
+  "method_line_before": "431",
+  "revision": "7d2365a248943071a44d8495655186e4f14ea294",
+  "build_system": {
+    "custom": [
+      {
+        "test": "mvn test -pl bundles/extensions/xss -Dtest=org.apache.sling.xss.impl.XSSAPIImplTest"
+      },
+      {
+        "compile": "mvn -DskipTests clean install"
+      },
+      {
+        "extract": "mvn dependency:build-classpath -Dmdep.outputFile='classpath.info' -U -V -B"
+      }
+    ]
+  },
+  "file_path": "bundles/extensions/xss/src/main/java/org/apache/sling/xss/impl/XSSAPIImpl.java",
+  "test_class": "org.apache.sling.xss.impl.XSSAPIImplTest",
+  "src_path": "bundles/extensions/xss/src/main/java",
+  "test_path": "bundles/extensions/xss/src/test/java",
+  "package_path": ".",
+  "src_classes": "target/classes",
+  "test_classes": "target/test-classes"
+}

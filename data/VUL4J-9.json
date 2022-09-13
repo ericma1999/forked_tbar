@@ -1,0 +1,30 @@
+{
+  "id": "VUL4J-9",
+  "name": "apache/commons-configuration",
+  "vcs": "git",
+  "repo": "https://github.com/apache/commons-configuration.git",
+  "method": "read, read, read, read",
+  "method_line": "67, 81, 119, 133",
+  "method_line_before": "64, 78, 116, 130",
+  "revision": "add7375cf37fd316d4838c6c56b054fc293b4641",
+  "build_system": {
+    "custom": [
+      {
+        "test": "mvn test -Dtest=org.apache.commons.configuration2.TestYAMLConfiguration"
+      },
+      {
+        "compile": "mvn -DskipTests clean install"
+      },
+      {
+        "extract": "mvn dependency:build-classpath -Dmdep.outputFile='classpath.info' -U -V -B"
+      }
+    ]
+  },
+  "file_path": "src/main/java/org/apache/commons/configuration2/YAMLConfiguration.java",
+  "test_class": "org.apache.commons.configuration2.TestYAMLConfiguration",
+  "src_path": "src/main/java",
+  "test_path": "src/test/java",
+  "package_path": ".",
+  "src_classes": "target/classes",
+  "test_classes": "target/test-classes"
+}
