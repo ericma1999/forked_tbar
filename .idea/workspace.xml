@@ -23,8 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e362452-65ca-4366-bccb-35bb736687b2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuspiciousCodePositions/VUL4J_56/Ochiai.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SuspiciousCodePositions/VUL4J_56/Ochiai.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D4J/projects/VUL4J_56" beforeDir="false" afterPath="$PROJECT_DIR$/D4J/projects/VUL4J_56" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OUTPUT/NormalFL/TBar/FixedBugs/VUL4J_56/Patch_1_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/utils/PathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/utils/PathUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/lu/uni/serval/tbar/utils/PathUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/lu/uni/serval/tbar/utils/PathUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dependency/TBar-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/dependency/TBar-0.0.1-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +52,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2EN34Lp9bgRmSvD8uT2vxa3CxYl" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -203,6 +210,14 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="469" y="235" width="800" height="490" key="find.popup/0.0.1536.960@0.0.1536.960" timestamp="1663088556979" />
+    <state x="367" y="99" key="new project wizard" timestamp="1663096357273">
+      <screen x="0" y="0" width="1536" height="960" />
+    </state>
+    <state x="367" y="99" key="new project wizard/0.0.1536.960@0.0.1536.960" timestamp="1663096357273" />
+    <state x="433" y="225" key="run.anything.popup" timestamp="1663096345705">
+      <screen x="0" y="0" width="1536" height="960" />
+    </state>
+    <state x="433" y="225" key="run.anything.popup/0.0.1536.960@0.0.1536.960" timestamp="1663096345705" />
     <state x="433" y="212" width="670" height="675" key="search.everywhere.popup" timestamp="1663089684015">
       <screen x="0" y="0" width="1536" height="960" />
     </state>

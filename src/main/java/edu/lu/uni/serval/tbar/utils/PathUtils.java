@@ -101,19 +101,44 @@ public class PathUtils {
 			System.out.println("YOYOY");
 			System.out.println(content.get("method_line_before"));
 
-//				path.add("/" + content.get("src_classes").asText() + "/");
-//				path.add("/" + content.get("test_classes").asText() + "/");
-//				path.add("/" + content.get("file_path").asText() + "/");
-//				path.add("/" + content.get("test_class").asText() + "/");
+				path.add("/" + content.get("src_classes").asText() + "/");
+				path.add("/" + content.get("test_classes").asText() + "/");
 
-				path.add("/target/classes/");
-				path.add("/target/test-classes/");
-				path.add("/src/main/");
-				path.add("/src/test/");
+				path.add(trimTrailingJava(content.get("src_path").asText()));
+				path.add(trimTrailingJava(content.get("test_path").asText()));
+
+//				path.add("/" + content.get("src_path").asText() + "/");
+//				path.add("/" + content.get("test_path").asText() + "/");
+
+//			System.out.println("/" + content.get("src_classes").asText() + "/");
+//			System.out.println("/" + content.get("test_classes").asText() + "/");
+//			System.out.println("/" + content.get("src_path").asText() + "/");
+//			System.out.println("/" + content.get("test_path").asText() + "/");
+
+//				path.add("/target/classes/");
+//				path.add("/target/test-classes/");
+//				path.add("/src/main/");
+//				path.add("/src/test/");
 			System.out.println("BRUH123");
 		}
 		
 		return path;
+	}
+
+	public static String trimTrailingJava(String path) {
+		String x = path;
+
+		String[] content = x.split("/");
+		String output = "";
+		if (content[content.length - 1].equals("java")) {
+			for (int i = 0; i < content.length - 1; i++) {
+				output += content[i] + "/";
+			}
+			return "/" + output;
+		}
+
+		return x;
+
 	}
 
 	public static JsonNode readJson(String bugProject) throws IOException {
