@@ -23,16 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e362452-65ca-4366-bccb-35bb736687b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_20160212.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.temp/TBar/VUL4J_56/ZipArchiveInputStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/TBar/VUL4J_56/ZipArchiveInputStream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.temp/TBar/VUL4J_56/ZipArchiveInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/.temp/TBar/VUL4J_56/ZipArchiveInputStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/utils/PathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/utils/PathUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dependency/TBar-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/dependency/TBar-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuspiciousCodePositions/VUL4J_56/Ochiai.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SuspiciousCodePositions/VUL4J_56/Ochiai.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,15 +69,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Maven.TBar [package,-DskipTests...]">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -209,13 +199,13 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="569" y="398" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.960@0.0.1536.960" timestamp="1662424084640" />
-    <state x="469" y="235" width="703" height="490" key="find.popup" timestamp="1663052234586">
+    <state x="469" y="235" width="800" height="490" key="find.popup" timestamp="1663088556979">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="469" y="235" width="703" height="490" key="find.popup/0.0.1536.960@0.0.1536.960" timestamp="1663052234586" />
-    <state x="433" y="212" width="670" height="675" key="search.everywhere.popup" timestamp="1663053342417">
+    <state x="469" y="235" width="800" height="490" key="find.popup/0.0.1536.960@0.0.1536.960" timestamp="1663088556979" />
+    <state x="433" y="212" width="670" height="675" key="search.everywhere.popup" timestamp="1663089684015">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="433" y="212" width="670" height="675" key="search.everywhere.popup/0.0.1536.960@0.0.1536.960" timestamp="1663053342417" />
+    <state x="433" y="212" width="670" height="675" key="search.everywhere.popup/0.0.1536.960@0.0.1536.960" timestamp="1663089684015" />
   </component>
 </project>
