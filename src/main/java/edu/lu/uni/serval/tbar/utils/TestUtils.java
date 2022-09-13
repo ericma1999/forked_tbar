@@ -34,8 +34,6 @@ public class TestUtils {
             }
         }
 
-        System.out.println("WTF");
-
         if (testResult.equals("")){//error occurs in run
             return Integer.MAX_VALUE;
         }
