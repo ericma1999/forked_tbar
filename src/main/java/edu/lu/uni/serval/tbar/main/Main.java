@@ -35,7 +35,7 @@ public class Main {
 		Configuration.outputPath += "NormalFL/";
 		String suspiciousFileStr = Configuration.suspPositionsFilePath;
 		
-		String[] elements = bugIdStr.split("_");
+		String[] elements = bugIdStr.split("-");
 		String projectName = elements[0];
 		int bugId;
 		try {

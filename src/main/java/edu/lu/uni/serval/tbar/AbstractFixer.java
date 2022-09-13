@@ -70,7 +70,7 @@ public abstract class AbstractFixer implements IFixer {
 	
 	public AbstractFixer(String path, String projectName, int bugId, String defects4jPath) {
 		this.path = path;
-		this.buggyProject = projectName + "_" + bugId;
+		this.buggyProject = projectName + "-" + bugId;
 		fullBuggyProjectPath = path + buggyProject;
 		this.defects4jPath = defects4jPath;
 //		int compileResult = TestUtils.compileProjectWithDefects4j(fullBuggyProjectPath, this.defects4jPath);

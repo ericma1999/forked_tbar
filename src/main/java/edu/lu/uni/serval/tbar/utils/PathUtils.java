@@ -17,7 +17,7 @@ public class PathUtils {
 
 	public static ArrayList<String> getSrcPath(String bugProject) {
 		ArrayList<String> path = new ArrayList<String>();
-		String[] words = bugProject.split("_");
+		String[] words = bugProject.split("-");
 		String projectName = words[0];
 		int bugId = Integer.parseInt(words[1]);
 		if (projectName.equals("Math")) {
@@ -143,7 +143,7 @@ public class PathUtils {
 
 	public static JsonNode readJson(String bugProject) throws IOException {
 		ObjectMapper mapper = new ObjectMapper();
-		String[] elements = bugProject.split("_");
+		String[] elements = bugProject.split("-");
 		String x = elements[0] + "-" +elements[1];
 		JsonNode jsonNode = mapper.readTree(new File(System.getProperty("user.dir") + "/data/" + x + ".json"));
 		return jsonNode;
