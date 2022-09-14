@@ -126,7 +126,6 @@ public class TestUtils {
             String testCommand = "";
             String[] projectPath = projectName.split("/");
             JsonNode content = readJson(projectPath[projectPath.length - 1]);
-            System.out.println("ahoy my friend");
             System.out.println(content.get("build_system").get("custom"));
             JsonNode custom = content.get("build_system").get("custom");
 
@@ -153,6 +152,9 @@ public class TestUtils {
                     }
                 }
             }
+
+            System.out.println("Executing the command");
+            System.out.println(testCommand);
 
 //            if (cmdType == "compile") {
 //                testCommand = "mvn -DskipTests clean install";

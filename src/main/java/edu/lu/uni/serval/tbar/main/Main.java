@@ -16,7 +16,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		System.out.println(args.length);
-		if (args.length != 4) {
+		if (args.length != 5) {
 			System.err.println("Arguments: \n" 
 					+ "\t<Bug_Data_Path>: the directory of checking out Defects4J bugs. \n"
 					+ "\t<Bug_ID>: bug id of each Defects4J bug, such as Chart_1. \n"
@@ -31,6 +31,7 @@ public class Main {
 		Configuration.datasetCommandAndCompilePath = args[3];
 		System.out.println(args[3]);
 		System.out.println(bugId);
+		Configuration.suspPositionsFilePath = args[4];
 		
 		fixBug(bugDataPath, defects4jHome, bugId);
 	}
