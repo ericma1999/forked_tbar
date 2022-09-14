@@ -49,6 +49,10 @@ public class Main {
 			System.err.println("Please input correct buggy project ID, such as \"Chart_1\".");
 			return;
 		}
+
+		BufferedWriter br = new BufferedWriter(new FileWriter(new File(Configuration.failedTestCasesFilePath + bugIdStr + ".txt"), true));
+		br.write("some text");
+		return;
 		
 		AbstractFixer fixer = new TBarFixer(bugDataPath, projectName, bugId, defects4jHome);
 		fixer.dataType = "TBar";
