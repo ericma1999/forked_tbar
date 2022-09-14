@@ -1,2 +1,1 @@
-Failing tests: 1
-  - hudson.tasks.junit.JUnitResultArchiverTest::testXxe
+some text

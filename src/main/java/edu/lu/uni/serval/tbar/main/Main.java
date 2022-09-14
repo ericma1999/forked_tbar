@@ -1,6 +1,7 @@
 package edu.lu.uni.serval.tbar.main;
 
 import java.io.File;
+import java.io.*;
 
 import edu.lu.uni.serval.tbar.AbstractFixer;
 import edu.lu.uni.serval.tbar.TBarFixer;
@@ -50,9 +51,13 @@ public class Main {
 			return;
 		}
 
-		BufferedWriter br = new BufferedWriter(new FileWriter(new File(Configuration.failedTestCasesFilePath + bugIdStr + ".txt"), true));
-		br.write("some text");
-		return;
+		try {
+			BufferedWriter br = new BufferedWriter(new FileWriter(new File(Configuration.failedTestCasesFilePath + bugIdStr + ".txt"), true));
+			br.write("some text");
+			br.close();
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
 		
 		AbstractFixer fixer = new TBarFixer(bugDataPath, projectName, bugId, defects4jHome);
 		fixer.dataType = "TBar";
