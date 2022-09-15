@@ -9,6 +9,7 @@ import java.io.File;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.*;
+import edu.lu.uni.serval.tbar.config.Configuration;
 
 public class TestUtils {
 
@@ -113,7 +114,7 @@ public class TestUtils {
         ObjectMapper mapper = new ObjectMapper();
         String[] elements = bugProject.split("-");
         String x = elements[0] + "-" +elements[1];
-        JsonNode jsonNode = mapper.readTree(new File(System.getProperty("user.dir") + "/data/" + x + ".json"));
+        JsonNode jsonNode = mapper.readTree(new File(Configuration.datasetCommandAndCompilePath + x + ".json"));
         return jsonNode;
     }
 

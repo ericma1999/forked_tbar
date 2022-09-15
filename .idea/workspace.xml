@@ -25,10 +25,14 @@
     <list default="true" id="6e362452-65ca-4366-bccb-35bb736687b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/D4J/projects/VUL4J_56" beforeDir="false" afterPath="$PROJECT_DIR$/D4J/projects/VUL4J_56" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestCases/VUL4J-7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/lu/uni/serval/tbar/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/lu/uni/serval/tbar/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FailedTestCases/VUL4J-7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedTestCases/VUL4J-7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/VUL4J-8.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/VUL4J-8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/utils/PathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/utils/PathUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/utils/TestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/lu/uni/serval/tbar/utils/TestUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/dependency/TBar-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/dependency/TBar-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dependency/com.gzoltar-0.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,17 +80,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Maven.TBar [package,-DskipTests...]">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TBar [package,-DskipTests...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -160,7 +153,10 @@
       <workItem from="1663065828221" duration="689000" />
       <workItem from="1663066531676" duration="1224000" />
       <workItem from="1663099479862" duration="1242000" />
-      <workItem from="1663100736035" duration="9082000" />
+      <workItem from="1663100736035" duration="9397000" />
+      <workItem from="1663138001576" duration="3710000" />
+      <workItem from="1663142253962" duration="5167000" />
+      <workItem from="1663241996463" duration="1552000" />
     </task>
     <servers />
   </component>
@@ -184,22 +180,22 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="465" y="62" width="1071" height="898" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.960@0.0.1536.960" timestamp="1663053277208" />
-    <state width="1494" height="265" key="GridCell.Tab.0.bottom" timestamp="1663053255694">
+    <state width="1494" height="265" key="GridCell.Tab.0.bottom" timestamp="1663138907774">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1494" height="265" key="GridCell.Tab.0.bottom/0.0.1536.960@0.0.1536.960" timestamp="1663053255694" />
-    <state width="1494" height="265" key="GridCell.Tab.0.center" timestamp="1663053255693">
+    <state width="1494" height="265" key="GridCell.Tab.0.bottom/0.0.1536.960@0.0.1536.960" timestamp="1663138907774" />
+    <state width="1494" height="265" key="GridCell.Tab.0.center" timestamp="1663138907773">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1494" height="265" key="GridCell.Tab.0.center/0.0.1536.960@0.0.1536.960" timestamp="1663053255693" />
-    <state width="1494" height="265" key="GridCell.Tab.0.left" timestamp="1663053255693">
+    <state width="1494" height="265" key="GridCell.Tab.0.center/0.0.1536.960@0.0.1536.960" timestamp="1663138907773" />
+    <state width="1494" height="265" key="GridCell.Tab.0.left" timestamp="1663138907773">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1494" height="265" key="GridCell.Tab.0.left/0.0.1536.960@0.0.1536.960" timestamp="1663053255693" />
-    <state width="1494" height="265" key="GridCell.Tab.0.right" timestamp="1663053255694">
+    <state width="1494" height="265" key="GridCell.Tab.0.left/0.0.1536.960@0.0.1536.960" timestamp="1663138907773" />
+    <state width="1494" height="265" key="GridCell.Tab.0.right" timestamp="1663138907773">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1494" height="265" key="GridCell.Tab.0.right/0.0.1536.960@0.0.1536.960" timestamp="1663053255694" />
+    <state width="1494" height="265" key="GridCell.Tab.0.right/0.0.1536.960@0.0.1536.960" timestamp="1663138907773" />
     <state x="277" y="116" key="SettingsEditor" timestamp="1663066207952">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
@@ -208,10 +204,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="569" y="398" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.960@0.0.1536.960" timestamp="1662424084640" />
-    <state x="469" y="235" width="800" height="490" key="find.popup" timestamp="1663123727657">
+    <state x="469" y="235" width="800" height="518" key="find.popup" timestamp="1663265514091">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="469" y="235" width="800" height="490" key="find.popup/0.0.1536.960@0.0.1536.960" timestamp="1663123727657" />
+    <state x="469" y="235" width="800" height="518" key="find.popup/0.0.1536.960@0.0.1536.960" timestamp="1663265514091" />
     <state x="367" y="99" key="new project wizard" timestamp="1663096357273">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
@@ -220,9 +216,9 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="433" y="225" key="run.anything.popup/0.0.1536.960@0.0.1536.960" timestamp="1663096345705" />
-    <state x="433" y="212" width="670" height="675" key="search.everywhere.popup" timestamp="1663124651801">
+    <state x="433" y="212" width="670" height="675" key="search.everywhere.popup" timestamp="1663242227051">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="433" y="212" width="670" height="675" key="search.everywhere.popup/0.0.1536.960@0.0.1536.960" timestamp="1663124651801" />
+    <state x="433" y="212" width="670" height="675" key="search.everywhere.popup/0.0.1536.960@0.0.1536.960" timestamp="1663242227051" />
   </component>
 </project>

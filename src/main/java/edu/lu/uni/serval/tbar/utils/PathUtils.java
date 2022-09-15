@@ -12,6 +12,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.StringUtils;
 //import com.fasterxml.jackson.core.*;
 import com.fasterxml.jackson.*;
+import edu.lu.uni.serval.tbar.config.Configuration;
 
 public class PathUtils {
 
@@ -119,7 +120,6 @@ public class PathUtils {
 //				path.add("/target/test-classes/");
 //				path.add("/src/main/");
 //				path.add("/src/test/");
-			System.out.println("BRUH123");
 		}
 		
 		return path;
@@ -145,7 +145,7 @@ public class PathUtils {
 		ObjectMapper mapper = new ObjectMapper();
 		String[] elements = bugProject.split("-");
 		String x = elements[0] + "-" +elements[1];
-		JsonNode jsonNode = mapper.readTree(new File(System.getProperty("user.dir") + "/data/" + x + ".json"));
+		JsonNode jsonNode = mapper.readTree(new File(Configuration.datasetCommandAndCompilePath + x + ".json"));
 		return jsonNode;
 	}
 
